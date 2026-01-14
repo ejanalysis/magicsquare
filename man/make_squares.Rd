@@ -2,7 +2,7 @@
 % Please edit documentation in R/make_squares.R
 \name{make_squares}
 \alias{make_squares}
-\title{try to create magic squares given a word list}
+\title{try to create magic squares (each row and each column is a word) given a word list}
 \usage{
 make_squares(
   wordlist,
@@ -23,16 +23,48 @@ make_squares(
 \value{
 a list with counts of plausible combinations
   for 2,3,4,5 rows, and matrices of found partial or full squares
- The results include each valid table and the transposed version of it as well,
+ The results include each valid table and the transposed version of it as well.
 }
 \description{
-try to create magic squares given a word list
+try to create magic squares (each row and each column is a word) given a word list
+}
+\details{
+Examples of squares:
+
+  3 X 3
+
+A R E
+I O N
+R E D
+
+  and the transposed version:
+
+A I R
+R O E
+E N D
+
+ 5 X 5
+
+S C R A P
+A L I B I
+B E G A N
+R A I S E
+E N D E D
+
+  and the transposed version:
+
+S A B R E
+C L E A N
+R I G I D
+A B A S E
+P I N E D
 }
 \examples{
- make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
+ # y = make_squares(words3) # finds >33,000 squares that are 3x3, but takes a while.
 
- x = make_squares(  )
- x$found4
- transpose_each_square(x$found4)
+ x3 = make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
+ x4 = make_squares( words4example )
+ x4$found4
+ magicsquare:::transpose_each_square(x4$found4)
 
 }

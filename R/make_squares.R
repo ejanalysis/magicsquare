@@ -5,7 +5,7 @@
 ################## ################### ################### #
 
 
-#' try to create magic squares given a word list
+#' try to create magic squares (each row and each column is a word) given a word list
 #'
 #' @param wordlist vector of character string words (all the same number of characters, either all with 4 or all with 5)
 #' @param quiet whether to print partial successes, attempts
@@ -14,14 +14,45 @@
 #'
 #' @returns a list with counts of plausible combinations
 #'   for 2,3,4,5 rows, and matrices of found partial or full squares
-#'  The results include each valid table and the transposed version of it as well,
+#'  The results include each valid table and the transposed version of it as well.
+#' @details
+#' Examples of squares:
+#'
+#'   3 X 3
+#'
+#' A R E
+#' I O N
+#' R E D
+#'
+#'   and the transposed version:
+#'
+#' A I R
+#' R O E
+#' E N D
+#'
+#'  5 X 5
+#'
+#' S C R A P
+#' A L I B I
+#' B E G A N
+#' R A I S E
+#' E N D E D
+#'
+#'   and the transposed version:
+#'
+#' S A B R E
+#' C L E A N
+#' R I G I D
+#' A B A S E
+#' P I N E D
 #'
 #' @examples
-#'  make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
+#'  # y = make_squares(words3) # finds >33,000 squares that are 3x3, but takes a while.
 #'
-#'  x = make_squares(  )
-#'  x$found4
-#'  transpose_each_square(x$found4)
+#'  x3 = make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
+#'  x4 = make_squares( words4example )
+#'  x4$found4
+#'  magicsquare:::transpose_each_square(x4$found4)
 #'
 #' @export
 #'
@@ -30,6 +61,7 @@ make_squares = function(wordlist,
                     save_2row_hits = FALSE,
                     save_3row_hits = FALSE) {
 
+  started = Sys.time()
   wordlist = sort(unique(toupper(wordlist)))
 
   n <- sapply(wordlist, nchar)
@@ -101,7 +133,7 @@ make_squares = function(wordlist,
   word2okmatrix <- matrix(0, nrow = length(wordlist), ncol = length(wordlist))
   rownames(word2okmatrix) <- colnames(word2okmatrix) <- wordlist
 
-  cat("WORDLIST HAS ", length(wordlist), "unique words \n")
+  cat("\nWORDLIST HAS ", length(wordlist), "unique words \n")
   ############################################################################# #
   ############################################################################# #
 
@@ -204,7 +236,7 @@ make_squares = function(wordlist,
                       ) {TRUE} else {FALSE}
                       count_ok_5rows <- count_ok_5rows +  (word5ok[w5])
                       if (word5ok[w5]) {
-                        cat(paste0("\n POSSIBLE FULL SQUARE: \n", paste0(c(wordlist[w1], wordlist[w2], wordlist[w3], wordlist[w4], wordlist[w5]), collapse = " \n")),  "\n\n")
+                        cat(paste0("\n FULL SQUARE FOUND: \n", paste0(c(wordlist[w1], wordlist[w2], wordlist[w3], wordlist[w4], wordlist[w5]), collapse = " \n")),  "\n\n")
                         found5 <- cbind(  found5, cbind(c(wordlist[w1], wordlist[w2], wordlist[w3], wordlist[w4], wordlist[w5])))
                       }
                     }
@@ -236,6 +268,9 @@ make_squares = function(wordlist,
     "\n"
   ))
   # print(word2okmatrix)
+  timing <- paste0("Time elapsed: ", round(difftime(Sys.time(), started, units = 'mins'), 1), ' minutes')
+  print(timing)
+
   return(list(
     count_ok_2rows = count_ok_2rows,
     count_ok_3rows = count_ok_3rows,
@@ -244,7 +279,8 @@ make_squares = function(wordlist,
     found2 = found2,
     found3 = found3,
     found4 = found4,
-    found5 = found5
+    found5 = found5,
+    timing = timing
   ))
   ######################### #
 

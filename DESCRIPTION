@@ -1,6 +1,6 @@
 Package: magicsquare
 Type: Package
-Title: Make 4x4 or 5x5 Magic Squares from Word Lists
+Title: Make 4x4 or 5x5 Magic Squares from Word Lists (each row and each column is a word)
 Version: 0.1.0
 Authors@R: c(
     person(
@@ -11,6 +11,7 @@ Authors@R: c(
   )
 Description: Make 4x4 or 5x5 Magic Squares from Word Lists
     so that you can read words across and down
+    (each row and each column is a word)
     by drawing from a custom dictionary of words
 License: MIT
 Encoding: UTF-8

@@ -47,6 +47,12 @@ usethis::use_data(words5example, overwrite = TRUE)
 
 ## read text files and save as datasets for package
 
+# 3-letter word list from
+# https://copylists.com/words/list-of-3-letter-words/#CVS
+
+words3 <- read.csv('https://copylists.com/downloads/words/3_letter_words/3_letter_words.csv')
+words3 <- words3$X
+usethis::use_data(words3, overwrite = TRUE)
 
 # # 4-letter word list from https://gist.github.com/raspberrypisig/cc18b0f4fbc0c79ffd667d06adc0a190
 words4 = readLines("./inst/4-letter-words-6k.txt")  ## excessive, since many of these words are VERY OBSCURE !
