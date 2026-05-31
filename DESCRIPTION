@@ -16,6 +16,6 @@ Description: Make 4x4 or 5x5 Magic Squares from Word Lists
 License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
+Config/roxygen2/version: 8.0.0
