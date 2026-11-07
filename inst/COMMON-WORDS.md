@@ -11,7 +11,7 @@ All bundled word-list vectors, including the full `words5`, music vocabulary,
 and three- and four-letter lists, now use the same descending frequency order.
 Original membership and case were preserved. No-estimate words have Zipf score
 0 and are placed last, with uppercase alphabetical ties. The editable text
-vocabularies use the same ordering. `word_frequencies` records the 9,521 unique
+vocabularies use the same ordering. `word_frequencies` records the 9,618 unique
 spellings scored across the bundled lists; unestimated per-million values are
 NA. `squares5useful` is a set of search results and was not reordered.
 

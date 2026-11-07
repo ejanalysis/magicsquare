@@ -4,7 +4,7 @@
 \title{English Frequency Estimates for Bundled Vocabulary Spellings}
 \description{Estimates used to order the bundled word lists, from wordfreq
 3.1.1's English large wordlist. Estimates pool case and word senses.}
-\format{A data frame of 9,521 distinct uppercase spellings with columns:
+\format{A data frame of 9,618 distinct uppercase spellings with columns:
 \describe{
 \item{word}{Uppercase spelling.}
 \item{letters}{Number of letters.}

@@ -118,9 +118,9 @@ R E G E R    R E G E R
 as in this symmetric square. The default is `FALSE`, which forbids that reuse.
 Row words must always be distinct.
 
-The bundled 607-word candidate vocabulary currently produces 17 squares with
+The bundled 824-word candidate vocabulary currently produces 66 squares with
 reuse allowed. One contains the unverified entry ALFIN from the original list.
-To exclude that entry and print the remaining 16 squares:
+To exclude that entry and print the remaining 65 squares:
 
 ```r
 x <- make_squares(setdiff(words5music, "ALFIN"), allow_shared_words = TRUE)
