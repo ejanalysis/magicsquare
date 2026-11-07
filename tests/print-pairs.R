@@ -26,7 +26,7 @@ a <- c('AIR','ROE','END')
 b <- c('CAT','ARE','RED')
 at <- c('ARE','ION','RED')
 bt <- c('CAR','ARE','TED')
-output <- capture.output(print_squares(cbind(a,b,at,bt)))
+output <- capture.output(print_squares(cbind(a,b,at,bt), compact=TRUE))
 stopifnot(sum(grepl('^Square ', output)) == 2,
           any(grepl('AIR +ARE', output)), any(grepl('CAT +CAR', output)))
 # Partial results retain all rows and clearly identify transposed prefixes.

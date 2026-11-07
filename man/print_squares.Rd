@@ -4,7 +4,7 @@
 \alias{print_squares}
 \title{Print each square beside its transpose}
 \usage{
-print_squares(hitstable, query = "*", compact = TRUE)
+print_squares(hitstable, query = "*", compact = FALSE)
 }
 \arguments{
 \item{hitstable}{Output of [make_squares()], or a matrix/data frame with
@@ -13,7 +13,8 @@ one square's row words in each column. Three to five saved rows are supported.}
 \item{query}{A word or regular expression to match in either orientation,
 ignoring case. The default \code{"*"} displays all pairs.}
 
-\item{compact}{Set FALSE to print spaces between letters.}
+\item{compact}{Defaults to FALSE, printing spaces between letters.
+Set TRUE to print words without spaces.}
 }
 \value{
 Invisibly returns a data frame of matching input columns, or NULL

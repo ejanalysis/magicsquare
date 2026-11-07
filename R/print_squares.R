@@ -4,7 +4,8 @@
 #'   one square's row words in each column. Three to five saved rows are supported.
 #' @param query A word or regular expression to match in either orientation,
 #'   ignoring case. The default \code{"*"} displays all pairs.
-#' @param compact Set FALSE to print spaces between letters.
+#' @param compact Defaults to FALSE, printing spaces between letters.
+#'   Set TRUE to print words without spaces.
 #'
 #' @returns Invisibly returns a data frame of matching input columns, or NULL
 #'   if none match. Printing groups transpose pairs, without changing the input
@@ -29,7 +30,7 @@
 #' print_squares(x$found5, compact = FALSE)
 #' print_squares(x$found5, query = 'ELGAR', compact = FALSE)
 #' @export
-print_squares = function(hitstable, query="*", compact = TRUE) {
+print_squares = function(hitstable, query="*", compact = FALSE) {
   if (missing(hitstable) ||
       !(is.list(hitstable) || is.matrix(hitstable) || is.data.frame(hitstable))) {
     stop('hitstable must be make_squares() results or a matrix/data frame of row words')
