@@ -1,0 +1,613 @@
+Five-letter music candidate vocabulary
+Columns: WORD | CATEGORY | CONNECTION
+Curated candidates, not a fully source-verified dictionary. Original entries retained.
+Names may be first names or surnames; accents, spaces and punctuation can be removed.
+See MUSIC-WORDS.md for inclusion policy and checked reference examples.
+
+ABDUL | performer or group | Paula Abdul
+ADAMS | performer or group | Bryan Adams or John Adams
+ADELE | performer or group | Singer Adele
+ADLER | performer or group | Steven Adler, drummer
+AFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+AHMAD | performer or group | Ahmad Jamal
+ALAPS | musical term | Plural of alap, introductory improvisation
+ALFIN | original | Retained from the original user vocabulary; connection not independently reviewed
+ALIVE | work title | Pearl Jam song
+ALLEN | performer or group | Lily Allen or Tony Allen
+ALONE | work title | Heart song
+ALTOS | original | Retained from the original user vocabulary; connection not independently reviewed
+ALWYN | composer or classical musician | William Alwyn, composer
+AMATI | instrument or equipment | Violin-making family
+AMPEX | instrument or equipment | Recording-equipment manufacturer
+AMURO | performer or group | Namie Amuro
+ANGIE | work title | Rolling Stones song
+ANITA | performer or group | Anita Baker
+ANNIE | work title | Stage musical
+ARIAS | original | Retained from the original user vocabulary; connection not independently reviewed
+ARNDT | composer or classical musician | Felix Arndt, composer
+ARRAU | composer or classical musician | Claudio Arrau, pianist
+ARTIE | performer or group | Artie Shaw
+ARTIS | performer or group | Artis the Spoonman, percussionist
+ARTUR | performer or group | Artur Rubinstein, pianist
+ASSAI | musical term | Italian intensifier in tempo or expression marks
+AUDIO | instrument or equipment | Sound recording or reproduction
+AYUMI | performer or group | Ayumi Hamasaki
+BAILE | musical term | Spanish for dance, including flamenco dance
+BAKER | performer or group | Anita Baker or Chet Baker
+BANDS | original | Retained from the original user vocabulary; connection not independently reviewed
+BANJO | original | Retained from the original user vocabulary; connection not independently reviewed
+BARRE | musical term | Guitar fingering technique
+BARRY | performer or group | Barry White or John Barry
+BASHI | performer or group | Kishi Bashi, musician
+BASIA | performer or group | Singer Basia
+BASIE | performer or group | Count Basie
+BASSI | original | Retained from the original user vocabulary; connection not independently reviewed
+BASSO | original | Retained from the original user vocabulary; connection not independently reviewed
+BEAMS | musical term | Lines joining note stems
+BEATS | original | Retained from the original user vocabulary; connection not independently reviewed
+BEBEL | performer or group | Bebel Gilberto
+BEBOP | original | Retained from the original user vocabulary; connection not independently reviewed
+BECKY | performer or group | Becky G
+BELLS | instrument or equipment | Pitched percussion instruments
+BELTS | musical term | Uses a powerful vocal style
+BENDS | musical term | Pitch-bending gestures
+BERRY | original | Retained from the original user vocabulary; connection not independently reviewed
+BETTE | performer or group | Bette Midler
+BETTY | performer or group | Betty Carter or Betty Davis
+BFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+BILLY | performer or group | Billy Joel or Billy Strayhorn
+BIZET | composer or classical musician | Georges Bizet, composer
+BJORK | performer or group | Singer Björk; accent removed
+BLACK | work title | Pearl Jam song; also musicians Frank Black and Cilla Black
+BLISS | composer or classical musician | Arthur Bliss, composer
+BLOCH | composer or classical musician | Ernest Bloch, composer
+BLUES | musical term | Musical genre and form
+BOMBO | instrument or equipment | Bass drum in Spanish-speaking traditions
+BONGO | instrument or equipment | Afro-Cuban hand drum
+BOONE | performer or group | Pat Boone or Debby Boone
+BOSSA | musical term | As in bossa nova
+BOWED | instrument or equipment | String playing technique
+BOWEN | composer or classical musician | York Bowen, composer
+BOWIE | original | Retained from the original user vocabulary; connection not independently reviewed
+BOWLS | instrument or equipment | Singing bowls
+BOYCE | composer or classical musician | William Boyce, composer
+BOYLE | performer or group | Susan Boyle
+BRANT | composer or classical musician | Henry Brant, composer
+BRASS | original | Retained from the original user vocabulary; connection not independently reviewed
+BRAVE | musical term | Sara Bareilles song title; also general word
+BREVE | musical term | Musical note value
+BRIAN | composer or classical musician | Havergal Brian, composer
+BROWN | original | Retained from the original user vocabulary; connection not independently reviewed
+BRUCE | original | Retained from the original user vocabulary; connection not independently reviewed
+BRUCH | composer or classical musician | Max Bruch, composer
+BRUNO | original | Retained from the original user vocabulary; connection not independently reviewed
+BRUUN | composer or classical musician | Peter Bruun, composer
+BSIDE | original | Retained from the original user vocabulary; connection not independently reviewed
+BUDDY | original | Retained from the original user vocabulary; connection not independently reviewed
+BUGLE | instrument or equipment | Brass instrument
+BURNS | instrument or equipment | Guitar maker; also poet and songwriter Robert Burns
+BUSCH | composer or classical musician | Fritz Busch, conductor; Adolf Busch, violinist
+BYRDS | original | Retained from the original user vocabulary; connection not independently reviewed
+CABLE | instrument or equipment | Audio connection
+CAJON | instrument or equipment | Box drum; accent removed from cajón
+CANON | original | Retained from the original user vocabulary; connection not independently reviewed
+CANTE | musical term | Flamenco song or singing
+CAREY | original | Retained from the original user vocabulary; connection not independently reviewed
+CARLA | performer or group | Carla Bley or Carla Thomas
+CARLE | performer or group | Frankie Carle, pianist
+CARLO | performer or group | Carlo Bergonzi, tenor
+CARLY | performer or group | Carly Simon or Carly Rae Jepsen
+CAROL | performer or group | Song type; also Carole King first name differs
+CASIO | instrument or equipment | Keyboard manufacturer
+CCLEF | original | Retained from the original user vocabulary; connection not independently reviewed
+CELIA | performer or group | Celia Cruz
+CELLO | original | Retained from the original user vocabulary; connection not independently reviewed
+CENTS | musical term | Units for musical intervals
+CFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+CHANT | musical term | Intoned or repeated vocal music
+CHART | musical term | Written musical arrangement or ranking of recordings
+CHESS | work title | Stage musical
+CHIME | instrument or equipment | Bell-like percussion instrument or sound
+CHOIR | musical term | Ensemble of singers
+CHOPS | musical term | Musician's technical skills
+CHORD | original | Retained from the original user vocabulary; connection not independently reviewed
+CHORO | musical term | Brazilian instrumental genre
+CHUCK | original | Retained from the original user vocabulary; connection not independently reviewed
+CHUNG | performer or group | Chung Ha, singer; stage-name component
+CIARA | performer or group | Singer Ciara
+CLASH | original | Retained from the original user vocabulary; connection not independently reviewed
+CLAVE | instrument or equipment | Rhythm pattern and percussion-stick name
+CLEFS | original | Retained from the original user vocabulary; connection not independently reviewed
+CLINE | performer or group | Patsy Cline
+CODAS | original | Retained from the original user vocabulary; connection not independently reviewed
+COHEN | performer or group | Leonard Cohen
+COLES | composer or classical musician | Cecil Coles, composer
+CONGA | musical term | Afro-Cuban drum, rhythm and dance
+CONTE | performer or group | Paolo Conte
+COOKE | original | Retained from the original user vocabulary; connection not independently reviewed
+CORNO | instrument or equipment | Italian for horn
+CORNU | instrument or equipment | Ancient Roman brass instrument
+COUNT | performer or group | Count Basie
+COWEN | composer or classical musician | Frederic Hymen Cowen, composer
+CROCE | performer or group | Jim Croce
+CROSS | musical term | As in cross rhythm
+CRUMB | composer or classical musician | George Crumb, composer
+CUBAN | original | Retained from the original user vocabulary; connection not independently reviewed
+CYRUS | performer or group | Miley Cyrus or Billy Ray Cyrus
+DANCE | musical term | Musical movement or musical form
+DARYL | performer or group | Daryl Hall
+DAVIS | performer or group | Miles Davis
+DEBBY | performer or group | Debby Boone
+DEBUT | original | Retained from the original user vocabulary; connection not independently reviewed
+DECAY | musical term | Sound envelope phase
+DECCA | performer or group | Record label
+DECKS | instrument or equipment | DJ turntables
+DFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+DIANA | performer or group | Diana Ross
+DIRGE | original | Retained from the original user vocabulary; connection not independently reviewed
+DISCO | musical term | Dance music genre
+DIZZY | work title | Tommy Roe song; also Dizzy Gillespie
+DOLCE | original | Retained from the original user vocabulary; connection not independently reviewed
+DOLLY | performer or group | Dolly Parton
+DONNA | performer or group | Donna Summer
+DOVES | performer or group | British band
+DRAKE | original | Retained from the original user vocabulary; connection not independently reviewed
+DRDRE | original | Retained from the original user vocabulary; connection not independently reviewed
+DREAM | work title | Johnny Mercer song Dream
+DRONE | musical term | Sustained tone or musical texture
+DRUMS | original | Retained from the original user vocabulary; connection not independently reviewed
+DUBBY | musical term | Having the sound or style of dub music
+DUDUK | instrument or equipment | Armenian double-reed wind instrument
+DUETS | original | Retained from the original user vocabulary; connection not independently reviewed
+DUKAS | composer or classical musician | Paul Dukas, composer
+DUPRE | composer or classical musician | Marcel Dupré, organist and composer; accent removed
+DUPUY | composer or classical musician | Edouard Du Puy, composer and singer; surname joined
+DYLAN | original | Retained from the original user vocabulary; connection not independently reviewed
+ECHOS | original | Retained from the original user vocabulary; connection not independently reviewed
+EFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+ELBOW | performer or group | British band
+ELEGY | original | Retained from the original user vocabulary; connection not independently reviewed
+ELGAR | composer or classical musician | Edward Elgar, composer
+ELTON | original | Retained from the original user vocabulary; connection not independently reviewed
+ELVIS | original | Retained from the original user vocabulary; connection not independently reviewed
+EMERY | performer or group | Matt Emery, composer and pianist
+EMILE | performer or group | Émile Waldteufel, composer; accent removed
+EMILY | performer or group | Emily Remler or Emily Saliers
+EMMET | performer or group | Emmet Cahill, singer
+ENNIO | performer or group | Ennio Morricone
+ENOCH | composer or classical musician | Enoch zu Guttenberg, conductor
+ENZSO | performer or group | New Zealand orchestral pop project ENZSO
+ERNIE | instrument or equipment | Ernie Ball, strings and instrument brand
+ERNST | instrument or equipment | Heinrich Wilhelm Ernst, violinist and composer
+ESTEY | instrument or equipment | Organ and piano manufacturer
+ETUDE | original | Retained from the original user vocabulary; connection not independently reviewed
+EVANS | instrument or equipment | Drumhead brand; also pianist Bill Evans
+EVITA | work title | Stage musical
+FADER | instrument or equipment | Mixer level control
+FADOS | musical term | Portuguese songs
+FAINT | musical term | Very soft sound; broad descriptive candidate
+FALLA | composer or classical musician | Manuel de Falla, composer
+FALLS | musical term | Pitch-fall ornaments
+FAURE | composer or classical musician | Gabriel Fauré, composer; accent removed
+FAUST | work title | Gounod opera
+FCLEF | original | Retained from the original user vocabulary; connection not independently reviewed
+FEVER | work title | Song recorded by Little Willie John and Peggy Lee
+FFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+FIELD | composer or classical musician | John Field, composer and pianist
+FIFES | instrument or equipment | Small transverse flutes
+FIFTH | original | Retained from the original user vocabulary; connection not independently reviewed
+FINZI | composer or classical musician | Gerald Finzi, composer
+FLAGS | musical term | Marks on note stems
+FLATS | original | Retained from the original user vocabulary; connection not independently reviewed
+FLOOR | performer or group | Floor Jansen, singer
+FLOYD | original | Retained from the original user vocabulary; connection not independently reviewed
+FLUTE | original | Retained from the original user vocabulary; connection not independently reviewed
+FORTE | original | Retained from the original user vocabulary; connection not independently reviewed
+FOSCA | work title | Character in the musical Passion
+FOSSE | work title | Stage revue; also choreographer Bob Fosse
+FRANK | performer or group | Frank Sinatra or Frank Zappa
+FRANZ | composer or classical musician | Robert Franz, composer
+FRETS | instrument or equipment | Pitch-defining ridges on a fingerboard
+FUCHS | composer or classical musician | Robert Fuchs, composer
+FUGAL | musical term | Relating to a fugue
+FUGUE | original | Retained from the original user vocabulary; connection not independently reviewed
+FUNKY | original | Retained from the original user vocabulary; connection not independently reviewed
+GAIDA | instrument or equipment | Balkan bagpipe
+GAITA | instrument or equipment | Bagpipe name in Iberian traditions
+GALLI | composer or classical musician | Amintore Galli, composer
+GAMAK | musical term | Indian melodic ornament
+GAMUT | musical term | Full musical range
+GARTH | original | Retained from the original user vocabulary; connection not independently reviewed
+GCLEF | original | Retained from the original user vocabulary; connection not independently reviewed
+GFLAT | original | Retained from the original user vocabulary; connection not independently reviewed
+GHOST | musical term | As in ghost note
+GIGUE | original | Retained from the original user vocabulary; connection not independently reviewed
+GLUCK | composer or classical musician | Christoph Willibald Gluck, composer
+GOMES | composer or classical musician | Antônio Carlos Gomes, composer
+GOMEZ | performer or group | Selena Gomez
+GONGS | instrument or equipment | Struck metal percussion instruments
+GOULD | composer or classical musician | Glenn Gould, pianist; Morton Gould, composer
+GRACE | musical term | As in grace note
+GRAND | original | Retained from the original user vocabulary; connection not independently reviewed
+GRAUN | composer or classical musician | Carl Heinrich Graun, composer
+GRAVE | original | Retained from the original user vocabulary; connection not independently reviewed
+GRIEG | composer or classical musician | Edvard Grieg, composer
+GUIRO | instrument or equipment | Scraped percussion instrument; accent removed from güiro
+GUSLE | instrument or equipment | Balkan bowed instrument
+GUSLI | instrument or equipment | East Slavic plucked zither
+GUZLA | instrument or equipment | Bowed Balkan instrument; spelling variant of gusle
+GYPSY | work title | Stage musical
+HALEN | original | Retained from the original user vocabulary; connection not independently reviewed
+HANNA | performer or group | Kathleen Hanna
+HANNS | composer or classical musician | Hanns Eisler, composer
+HAPPY | work title | Pharrell Williams song
+HARPS | original | Retained from the original user vocabulary; connection not independently reviewed
+HARRY | performer or group | Debbie Harry or Harry Styles
+HARTY | composer or classical musician | Hamilton Harty, composer and conductor
+HAUER | composer or classical musician | Josef Matthias Hauer, composer
+HAYDN | performer or group | Joseph Haydn
+HAYES | performer or group | Isaac Hayes
+HELLO | work title | Adele song; also Lionel Richie song
+HENZE | composer or classical musician | Hans Werner Henze, composer
+HERTZ | musical term | Frequency unit
+HOLLY | original | Retained from the original user vocabulary; connection not independently reviewed
+HOLST | composer or classical musician | Gustav Holst, composer
+HOOKS | original | Retained from the original user vocabulary; connection not independently reviewed
+HORNS | original | Retained from the original user vocabulary; connection not independently reviewed
+HOUSE | musical term | Electronic dance music genre
+HUMAN | musical term | Rag'n'Bone Man song title
+HYMNS | original | Retained from the original user vocabulary; connection not independently reviewed
+HYUNA | performer or group | Singer Hyuna
+IBERT | composer or classical musician | Jacques Ibert, composer
+INTRO | musical term | Opening section
+ISAAC | performer or group | Isaac Hayes or Isaac Stern
+ISLAM | performer or group | Yusuf Islam
+ISLEY | performer or group | The Isley Brothers
+JACKS | instrument or equipment | Audio sockets
+JAMAL | performer or group | Ahmad Jamal
+JAMES | original | Retained from the original user vocabulary; connection not independently reviewed
+JAMIE | performer or group | Jamie Cullum
+JAMMY | performer or group | Prince Jammy, Jamaican producer
+JANIS | original | Retained from the original user vocabulary; connection not independently reviewed
+JAZZY | original | Retained from the original user vocabulary; connection not independently reviewed
+JERRY | performer or group | Jerry Lee Lewis or Jerry Garcia
+JHALA | musical term | Fast concluding section of Hindustani instrumental music
+JIGGY | musical term | Colloquial term associated with dancing; broad candidate
+JIMBO | performer or group | Jimbo Mathus
+JIMIN | performer or group | Singer Jimin
+JIMMY | performer or group | Jimmy Page or Jimmy Smith
+JISOO | performer or group | Singer Jisoo
+JIVES | musical term | Jive dances or performances
+JOHNS | performer or group | Daniel Johns, singer and guitarist
+JOLIE | work title | Jolie Blonde, Cajun song title component
+JONAS | performer or group | Jonas Brothers
+JONDO | musical term | As in cante jondo, flamenco singing
+JONES | performer or group | Quincy Jones or Norah Jones
+JOTAS | musical term | Spanish dances
+JUNHO | performer or group | Lee Jun-ho, singer
+JUNSU | performer or group | Kim Jun-su, singer
+KANUN | instrument or equipment | Variant spelling of qanun
+KANYE | original | Retained from the original user vocabulary; connection not independently reviewed
+KAROL | performer or group | Karol G
+KATIE | performer or group | Katie Melua
+KAVAL | instrument or equipment | End-blown flute
+KAWAI | instrument or equipment | Piano manufacturer
+KAZOO | instrument or equipment | Membrane instrument that modifies a hummed voice
+KEANE | performer or group | British band
+KESHA | performer or group | Singer Kesha
+KISHI | performer or group | Kishi Bashi, musician
+KRAUS | composer or classical musician | Lili Kraus, pianist; Alfredo Kraus, tenor
+KREBS | composer or classical musician | Johann Ludwig Krebs, composer
+KREIN | composer or classical musician | Alexander Krein, composer
+LANCE | performer or group | Lance Bass
+LARGO | original | Retained from the original user vocabulary; connection not independently reviewed
+LAYLA | work title | Derek and the Dominos song
+LEANN | performer or group | LeAnn Rimes
+LEARN | original | Retained from the original user vocabulary; connection not independently reviewed
+LEGNO | original | Retained from the original user vocabulary; connection not independently reviewed
+LEHAR | composer or classical musician | Franz Lehár, composer; accent removed
+LEIGH | composer or classical musician | Walter Leigh, composer
+LENTO | original | Retained from the original user vocabulary; connection not independently reviewed
+LEONA | performer or group | Leona Lewis
+LEWIS | performer or group | Jerry Lee Lewis or Leona Lewis
+LICKS | original | Retained from the original user vocabulary; connection not independently reviewed
+LILLY | performer or group | Lilly Hiatt, singer-songwriter
+LINDA | performer or group | Linda Ronstadt
+LINES | original | Retained from the original user vocabulary; connection not independently reviewed
+LISZT | composer or classical musician | Franz Liszt, composer and pianist
+LIZZO | performer or group | Singer and flutist Lizzo
+LLOYD | performer or group | Charles Lloyd or singer Lloyd
+LOCKE | composer or classical musician | Matthew Locke, composer
+LOEWE | composer or classical musician | Carl Loewe or Frederick Loewe, composers
+LOOPS | instrument or equipment | Repeated musical or recorded passages
+LORDE | performer or group | Singer Lorde
+LOTTE | composer or classical musician | Lotte Lehmann, soprano
+LOTTI | composer or classical musician | Antonio Lotti, composer
+LUCIA | work title | Lucia di Lammermoor; title name component
+LUIGI | composer or classical musician | Luigi Boccherini, composer
+LULLY | composer or classical musician | Jean-Baptiste Lully, composer
+LUTES | instrument or equipment | Plucked string instruments
+LYRES | instrument or equipment | Plucked string instruments
+LYRIC | musical term | Words of a song; also a vocal quality
+MAJOR | original | Retained from the original user vocabulary; connection not independently reviewed
+MAKAM | musical term | Turkish modal system term
+MALIK | performer or group | Zayn Malik
+MAMBO | original | Retained from the original user vocabulary; connection not independently reviewed
+MANON | work title | Massenet opera
+MAPEX | instrument or equipment | Drum manufacturer
+MAQAM | musical term | Melodic mode in Arabic music
+MARCY | performer or group | Marcy Playground, band name component
+MARIA | work title | Maria from West Side Story; also title name component
+MARSH | performer or group | Warne Marsh, saxophonist
+MARTI | performer or group | Marti Pellow
+MARTY | performer or group | Marty Robbins
+MASON | composer or classical musician | Lowell Mason, composer
+MBIRA | instrument or equipment | African lamellophone
+MEDEA | work title | Cherubini opera
+MEHUL | composer or classical musician | Étienne Méhul, composer; accents removed
+MERLE | performer or group | Merle Haggard
+MESTO | musical term | Musical direction meaning sad
+METER | original | Retained from the original user vocabulary; connection not independently reviewed
+MEZZO | original | Retained from the original user vocabulary; connection not independently reviewed
+MILES | performer or group | Miles Davis
+MILEY | performer or group | Miley Cyrus
+MINAJ | original | Retained from the original user vocabulary; connection not independently reviewed
+MINOR | original | Retained from the original user vocabulary; connection not independently reviewed
+MIXER | original | Retained from the original user vocabulary; connection not independently reviewed
+MIXES | instrument or equipment | Audio mixes
+MODAL | musical term | Using or relating to musical modes
+MODES | original | Retained from the original user vocabulary; connection not independently reviewed
+MOLTO | original | Retained from the original user vocabulary; connection not independently reviewed
+MORNA | performer or group | Cape Verdean music genre
+MOSSO | original | Retained from the original user vocabulary; connection not independently reviewed
+MUDDY | original | Retained from the original user vocabulary; connection not independently reviewed
+MUSIC | original | Retained from the original user vocabulary; connection not independently reviewed
+MUTES | instrument or equipment | Devices for modifying an instrument's sound
+MYWAY | original | Retained from the original user vocabulary; connection not independently reviewed
+NAMIE | performer or group | Namie Amuro
+NATTI | performer or group | Natti Natasha
+NICKI | performer or group | Nicki Minaj
+NICKS | performer or group | Stevie Nicks
+NICKY | performer or group | Nicky Jam
+NIELS | composer or classical musician | Niels Gade, composer
+NINJA | performer or group | Member of Die Antwoord
+NINTH | musical term | Musical interval or chord extension
+NOISE | musical term | Noise music genre or audio noise
+NOLAN | performer or group | Nolan Sisters surname
+NORAH | performer or group | Norah Jones
+NORMA | work title | Bellini opera
+NOTES | original | Retained from the original user vocabulary; connection not independently reviewed
+OASIS | performer or group | British band
+OATES | performer or group | John Oates
+OBOES | instrument or equipment | Double-reed woodwind instruments
+OCEAN | work title | John Butler instrumental
+OCTET | original | Retained from the original user vocabulary; connection not independently reviewed
+OPERA | original | Retained from the original user vocabulary; connection not independently reviewed
+ORFEO | work title | Monteverdi opera; title conventionally L'Orfeo
+ORGAN | original | Retained from the original user vocabulary; connection not independently reviewed
+OSCAR | performer or group | Oscar Peterson
+OSSIA | original | Retained from the original user vocabulary; connection not independently reviewed
+OUTRO | musical term | Closing section
+PAINE | composer or classical musician | John Knowles Paine, composer
+PAOLO | performer or group | Paolo Conte or Paolo Nutini
+PARRY | composer or classical musician | Hubert Parry, composer
+PARTS | composer or classical musician | Individual musical parts
+PARTY | original | Retained from the original user vocabulary; connection not independently reviewed
+PATCH | instrument or equipment | Synthesizer setting or audio routing connection
+PATSY | performer or group | Patsy Cline
+PAUER | composer or classical musician | Ernst Pauer, pianist and composer
+PAULA | performer or group | Paula Abdul
+PAUSA | original | Retained from the original user vocabulary; connection not independently reviewed
+PAUSE | original | Retained from the original user vocabulary; connection not independently reviewed
+PEARL | instrument or equipment | Drum manufacturer
+PEDAL | instrument or equipment | Piano or organ pedal; effects pedal
+PEGGY | work title | Peggy Sue, Buddy Holly song title component
+PERLE | composer or classical musician | George Perle, composer
+PERRY | performer or group | Katy Perry or Steve Perry
+PETER | performer or group | Peter Gabriel
+PETRI | composer or classical musician | Egon Petri, pianist
+PHISH | performer or group | American band
+PIANO | original | Retained from the original user vocabulary; connection not independently reviewed
+PICKS | original | Retained from the original user vocabulary; connection not independently reviewed
+PIPAS | instrument or equipment | Plural of pipa, Chinese lute
+PITCH | original | Retained from the original user vocabulary; connection not independently reviewed
+PLAYS | original | Retained from the original user vocabulary; connection not independently reviewed
+PORTA | composer or classical musician | Costanzo Porta, composer
+PRICE | composer or classical musician | Florence Price, composer; Leontyne Price, soprano
+PRIMO | original | Retained from the original user vocabulary; connection not independently reviewed
+PULSE | musical term | Regular beat
+QANUN | instrument or equipment | Middle Eastern plucked zither
+QUEEN | original | Retained from the original user vocabulary; connection not independently reviewed
+RADIO | performer or group | Music broadcasting medium
+RAGAM | musical term | Carnatic melodic framework term
+RAGAS | musical term | Indian melodic frameworks
+RANGE | musical term | Span of pitches
+RAVEL | composer or classical musician | Maurice Ravel, composer
+REBAB | instrument or equipment | Bowed or plucked string instrument family
+REBEC | instrument or equipment | Bowed string instrument
+REBEL | composer or classical musician | Jean-Féry Rebel, composer
+REEDS | original | Retained from the original user vocabulary; connection not independently reviewed
+REGER | composer or classical musician | Max Reger, composer
+REICH | composer or classical musician | Steve Reich, composer
+REMIX | original | Retained from the original user vocabulary; connection not independently reviewed
+RESTS | original | Retained from the original user vocabulary; connection not independently reviewed
+REYES | performer or group | Reyes surname shared by musicians including flamenco singer José Reyes
+RHYME | musical term | Element of songwriting and rap
+RICKI | performer or group | Ricki-Lee Coulter
+RICKY | performer or group | Ricky Martin
+RIFFS | original | Retained from the original user vocabulary; connection not independently reviewed
+RILEY | composer or classical musician | Terry Riley, composer
+RIMES | performer or group | LeAnn Rimes
+RINGO | performer or group | Ringo Starr
+ROCKS | original | Retained from the original user vocabulary; connection not independently reviewed
+ROLLS | original | Retained from the original user vocabulary; connection not independently reviewed
+RONDO | performer or group | Musical form
+ROOTS | original | Retained from the original user vocabulary; connection not independently reviewed
+ROREM | composer or classical musician | Ned Rorem, composer
+ROSAS | performer or group | Juventino Rosas, composer
+ROSIE | work title | Jackson Browne song
+ROSIN | original | Retained from the original user vocabulary; connection not independently reviewed
+ROSSI | composer or classical musician | Salamone Rossi or Luigi Rossi, composers
+ROUSE | composer or classical musician | Christopher Rouse, composer
+RUDIN | composer or classical musician | Alexander Rudin, cellist and conductor
+RUMBA | original | Retained from the original user vocabulary; connection not independently reviewed
+SABAR | musical term | Senegalese drum and dance tradition
+SALSA | musical term | Afro-Caribbean music and dance
+SALVI | composer or classical musician | Harp manufacturer founded by harpist Victor Salvi
+SAMBA | musical term | Brazilian music and dance
+SARAH | performer or group | Sarah Vaughan or Sarah McLachlan
+SARAI | performer or group | Rapper Sarai
+SAROD | instrument or equipment | Indian plucked string instrument
+SARON | instrument or equipment | Javanese metallophone
+SATIE | composer or classical musician | Erik Satie, composer
+SAXES | original | Retained from the original user vocabulary; connection not independently reviewed
+SCALA | original | Retained from the original user vocabulary; connection not independently reviewed
+SCALE | musical term | Ordered pitch collection
+SCATS | original | Retained from the original user vocabulary; connection not independently reviewed
+SCOOP | musical term | Pitch approach ornament
+SCORE | original | Retained from the original user vocabulary; connection not independently reviewed
+SCOTT | composer or classical musician | Cyril Scott or James Scott, composers
+SEGAH | musical term | Name of a makam in Middle Eastern music
+SEGNO | original | Retained from the original user vocabulary; connection not independently reviewed
+SENZA | musical term | Italian musical direction meaning without
+SERGE | performer or group | Serge Gainsbourg
+SEVEN | original | Retained from the original user vocabulary; connection not independently reviewed
+SHAKE | musical term | Trill-like ornament
+SHARP | original | Retained from the original user vocabulary; connection not independently reviewed
+SHAWM | instrument or equipment | Double-reed wind instrument
+SHEET | original | Retained from the original user vocabulary; connection not independently reviewed
+SHENG | instrument or equipment | Chinese mouth organ
+SHORE | composer or classical musician | Howard Shore, film composer
+SHURE | instrument or equipment | Microphone manufacturer
+SIGHT | musical term | As in sight reading
+SIGNO | original | Retained from the original user vocabulary; connection not independently reviewed
+SIMON | performer or group | Paul Simon or Carly Simon
+SINGS | musical term | Performs vocally
+SITAR | instrument or equipment | Indian plucked string instrument
+SIVAN | performer or group | Troye Sivan
+SIXTH | work title | Musical interval
+SKANK | musical term | Offbeat rhythmic guitar style in ska and reggae
+SLASH | performer or group | Guitarist Slash
+SLEEP | work title | Eric Whitacre choral work; also Max Richter composition
+SLIDE | instrument or equipment | Trombone component or guitar technique
+SLURS | original | Retained from the original user vocabulary; connection not independently reviewed
+SMASH | original | Retained from the original user vocabulary; connection not independently reviewed
+SMILE | work title | Charlie Chaplin song; also Beach Boys album
+SMOKE | work title | Ben Folds Five song
+SMYTH | composer or classical musician | Ethel Smyth, composer
+SNARE | instrument or equipment | Snare drum or its wires
+SOAVE | original | Retained from the original user vocabulary; connection not independently reviewed
+SOLOS | original | Retained from the original user vocabulary; connection not independently reviewed
+SOLTI | composer or classical musician | Georg Solti, conductor
+SONGS | original | Retained from the original user vocabulary; connection not independently reviewed
+SONNY | performer or group | Sonny Rollins or Sonny Stitt
+SORRY | work title | Justin Bieber song
+SOTTO | musical term | Italian musical direction meaning under or subdued
+SOUND | original | Retained from the original user vocabulary; connection not independently reviewed
+SOUSA | composer or classical musician | John Philip Sousa, composer
+SPEAK | musical term | As in speak-singing; broad candidate
+SPEED | musical term | Playback or performance speed
+SPOHR | composer or classical musician | Louis Spohr, composer and violinist
+SPOKE | musical term | As in spoken-word performance; broad candidate
+SPOON | performer or group | American band
+STAFF | musical term | Set of lines used in music notation
+STAGE | original | Retained from the original user vocabulary; connection not independently reviewed
+STAGG | instrument or equipment | Instrument brand
+STAND | instrument or equipment | Music stand or microphone stand
+STARR | performer or group | Ringo Starr
+STAVE | musical term | Set of lines used in music notation
+STEMS | musical term | Vertical strokes on written notes
+STEPS | original | Retained from the original user vocabulary; connection not independently reviewed
+STERN | composer or classical musician | Isaac Stern, violinist
+STILL | performer or group | William Grant Still, composer
+STING | performer or group | Singer and bassist Sting
+STITT | performer or group | Sonny Stitt
+STOCK | composer or classical musician | Frederick Stock, conductor
+STOLZ | composer or classical musician | Robert Stolz, composer
+STOMP | musical term | Dance or jazz composition type
+STOPS | instrument or equipment | Organ controls
+STRAP | instrument or equipment | Instrument support strap
+STRAT | instrument or equipment | Fender Stratocaster nickname; guitar model, rather than a maker
+STUDY | original | Retained from the original user vocabulary; connection not independently reviewed
+STYLE | performer or group | Musical style
+SUCRE | performer or group | Musical duo Sucré; accent removed
+SUEDE | performer or group | British band
+SUGAR | performer or group | Band Sugar
+SUITE | original | Retained from the original user vocabulary; connection not independently reviewed
+SUONA | instrument or equipment | Chinese double-reed wind instrument
+SUPPE | composer or classical musician | Franz von Suppé, composer; accent removed
+SUSAN | performer or group | Susan Boyle
+SWELL | musical term | Increase then decrease in loudness
+SWIFT | original | Retained from the original user vocabulary; connection not independently reviewed
+SWING | musical term | Jazz style and rhythmic feel
+SYNTH | instrument or equipment | Short for synthesizer
+TAALS | musical term | Variant plural spelling of tala
+TABLA | instrument or equipment | Indian hand drums
+TACET | musical term | Instruction to remain silent
+TAEIL | performer or group | Singer Taeil
+TALAS | musical term | Indian rhythmic cycles
+TAMMY | performer or group | Tammy Wynette
+TANGO | original | Retained from the original user vocabulary; connection not independently reviewed
+TANTO | original | Retained from the original user vocabulary; connection not independently reviewed
+TAPES | instrument or equipment | Recording media
+TARJA | performer or group | Tarja Turunen
+TEACH | original | Retained from the original user vocabulary; connection not independently reviewed
+TEMPO | original | Retained from the original user vocabulary; connection not independently reviewed
+TENOR | original | Retained from the original user vocabulary; connection not independently reviewed
+TENTH | musical term | Musical interval
+THAAT | musical term | Hindustani parent scale framework
+THAIS | work title | Massenet opera; accent removed
+THEME | original | Retained from the original user vocabulary; connection not independently reviewed
+THIRD | original | Retained from the original user vocabulary; connection not independently reviewed
+TOMMY | work title | The Who rock opera
+TONAL | musical term | Relating to tonality
+TONES | original | Retained from the original user vocabulary; connection not independently reviewed
+TONIC | original | Retained from the original user vocabulary; connection not independently reviewed
+TOSCA | work title | Puccini opera
+TOSTI | composer or classical musician | Francesco Paolo Tosti, composer
+TOSTO | original | Retained from the original user vocabulary; connection not independently reviewed
+TRACK | original | Retained from the original user vocabulary; connection not independently reviewed
+TRAIN | performer or group | American band
+TRIAD | musical term | Three-note chord
+TRILL | musical term | Musical ornament
+TRIOS | original | Retained from the original user vocabulary; connection not independently reviewed
+TROYE | performer or group | Troye Sivan
+TUBAS | original | Retained from the original user vocabulary; connection not independently reviewed
+TUNED | original | Retained from the original user vocabulary; connection not independently reviewed
+TUNER | musical term | Pitch-checking device or person
+TUNES | musical term | Melodies or adjusts an instrument's pitch
+TUPAC | original | Retained from the original user vocabulary; connection not independently reviewed
+TUTTI | original | Retained from the original user vocabulary; connection not independently reviewed
+TWAIN | original | Retained from the original user vocabulary; connection not independently reviewed
+USHER | performer or group | Singer Usher
+UTADA | performer or group | Hikaru Utada
+VALVE | instrument or equipment | Brass-instrument component
+VERDI | composer or classical musician | Giuseppe Verdi, composer
+VERSE | musical term | Section of a song
+VINYL | instrument or equipment | Record medium
+VIOLA | original | Retained from the original user vocabulary; connection not independently reviewed
+VIOLS | instrument or equipment | Bowed string instruments
+VOCAL | original | Retained from the original user vocabulary; connection not independently reviewed
+VOICE | musical term | Vocal sound or a musical part
+VOWEL | musical term | Important element of vocal technique
+WALTZ | original | Retained from the original user vocabulary; connection not independently reviewed
+WARNE | performer or group | Warne Marsh, saxophonist
+WATTS | performer or group | Charlie Watts
+WAVES | musical term | Sound waves
+WAYNE | original | Retained from the original user vocabulary; connection not independently reviewed
+WEBER | composer or classical musician | Carl Maria von Weber, composer
+WEILL | composer or classical musician | Kurt Weill, composer
+WHITE | performer or group | Barry White or Jack White
+WHOLE | original | Retained from the original user vocabulary; connection not independently reviewed
+WIDOR | composer or classical musician | Charles-Marie Widor, composer
+WILCO | performer or group | American band
+WOLFF | composer or classical musician | Christian Wolff, composer
+WORKS | original | Retained from the original user vocabulary; connection not independently reviewed
+YANNI | performer or group | Composer and keyboardist Yanni
+YOUNG | original | Retained from the original user vocabulary; connection not independently reviewed
+YUSUF | performer or group | Yusuf Islam, singer-songwriter
+ZAMPA | work title | Hérold opera
+ZAPPA | performer or group | Frank Zappa
+ZOUKS | musical term | Zouk music or dances
+ZURNA | instrument or equipment | Double-reed wind instrument
+ZWEIG | composer or classical musician | Stefan Zweig, librettist

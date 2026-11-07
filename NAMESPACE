@@ -3,3 +3,4 @@
 export(insertspaces)
 export(make_squares)
 export(print_squares)
+useDynLib(magicsquare, .registration = TRUE)

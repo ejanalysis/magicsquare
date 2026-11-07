@@ -2,69 +2,67 @@
 % Please edit documentation in R/make_squares.R
 \name{make_squares}
 \alias{make_squares}
-\title{try to create magic squares (each row and each column is a word) given a word list}
+\title{Find word squares using indexed prefix search}
 \usage{
 make_squares(
   wordlist,
   quiet = TRUE,
   save_2row_hits = FALSE,
-  save_3row_hits = FALSE
+  save_3row_hits = FALSE,
+  allow_shared_words = FALSE,
+  max_squares = Inf
 )
 }
 \arguments{
-\item{wordlist}{vector of character string words (all the same number of characters, either all with 4 or all with 5)}
+\item{wordlist}{Character vector of equal-length words, with 2 to 5 letters.
+Words are trimmed, uppercased, and deduplicated; only A-Z are accepted.}
 
-\item{quiet}{whether to print partial successes, attempts}
+\item{quiet}{Whether to suppress progress and timing output.}
 
-\item{save_2row_hits}{whether to save/return partial successes of just 2 rows that work}
+\item{save_2row_hits}{Whether to retain plausible two-row partial squares.}
 
-\item{save_3row_hits}{whether to save/return partial successes of just 3 rows that work}
+\item{save_3row_hits}{Whether to retain plausible three-row partial squares.}
+
+\item{allow_shared_words}{Allow a word to appear both across and down.
+Defaults to FALSE, preserving the original search rule. Row words must
+always be distinct. Column words may repeat, as in the original function.}
+
+\item{max_squares}{Stop after this many complete squares (default Inf).
+A finite limit can omit transposes and makes partial counts incomplete.}
 }
 \value{
-a list with counts of plausible combinations
-  for 2,3,4,5 rows, and matrices of found partial or full squares
- The results include each valid table and the transposed version of it as well.
+A list with the original count_ok_2rows through count_ok_5rows,
+  found2 through found5, and timing fields. Each column of a found matrix
+  contains the row words of one square. Unsaved partial hits are NULL.
+  Counts beyond the word length are NA. Additional fields elapsed_seconds,
+  complete, and candidates_checked describe the search. complete is FALSE
+  whenever the result limit stops the search, even if no further hits exist.
 }
 \description{
-try to create magic squares (each row and each column is a word) given a word list
+Find word squares using indexed prefix search
 }
 \details{
-Examples of squares:
+Column prefixes are indexed in a compiled trie. At each depth the search intersects
+position bitsets to select only row words whose letters can extend every
+column. It then checks that each extended column has an available dictionary
+completion. This searches general across/down squares, including asymmetric
+squares, rather than assuming the rows equal the columns.
 
-  3 X 3
-
-A R E
-I O N
-R E D
-
-  and the transposed version:
-
-A I R
-R O E
-E N D
-
- 5 X 5
-
-S C R A P
-A L I B I
-B E G A N
-R A I S E
-E N D E D
-
-  and the transposed version:
-
-S A B R E
-C L E A N
-R I G I D
-A B A S E
-P I N E D
+A complete unlimited search includes a transpose whenever its row words are
+distinct and it satisfies the same rules. Partial counts describe
+prefixes with an individually available completion for every column; they
+do not guarantee that all columns can be completed together.
 }
 \examples{
- # y = make_squares(words3) # finds >33,000 squares that are 3x3, but takes a while.
+# Find music squares and print with spaces between letters:
+x = make_squares(words5music, allow_shared_words = TRUE)
+print_squares(x$found5, compact = FALSE)
+# Show just the squares containing ELGAR:
+print_squares(x$found5, query = 'ELGAR', compact = FALSE)
 
- x3 = make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
- x4 = make_squares( words4example )
- x4$found4
- magicsquare:::transpose_each_square(x4$found4)
-
+x3 = make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
+x4 = make_squares(words4example)
+x4$found4
+# A symmetric square requires allowing words across and down:
+make_squares(c('BALL', 'AREA', 'LEAD', 'LADY'), allow_shared_words = TRUE)
 }

@@ -6,6 +6,14 @@
 #'
 #' @returns prints squares that had the query term
 #'
+#' @examples
+#' # Find music squares, allowing words to appear both across and down:
+#' x = make_squares(words5music, allow_shared_words = TRUE)
+#' # Spaces between letters make the squares easier to read:
+#' print_squares(x$found5, compact = FALSE)
+#' # Show only squares containing ELGAR:
+#' print_squares(x$found5, query = 'ELGAR', compact = FALSE)
+#'
 #' @export
 #'
 print_squares = function(hitstable, query="*", compact = TRUE) {
