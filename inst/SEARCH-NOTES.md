@@ -23,8 +23,11 @@ The existing result fields and matrix layout remain. Intentional cleanups:
 separately by `report` (TRUE by default). Unsaved partial hits are NULL rather than
 placeholder zeroes, counts beyond N are consistently NA, and invalid input
 raises an informative error. Word case, duplicates, and surrounding whitespace
-are normalized. Result order is deterministic alphabetical traversal rather
-than the original frequency-based order.
+are normalized. Complete results group each square with its transpose, retaining
+the first encountered orientation and group order from alphabetical search
+traversal. Symmetric squares and squares whose transpose is absent appear once.
+Partial results retain traversal order. Grouping only reorders existing hits;
+it does not add results or change counts or the result limit.
 
 ## Measurements
 

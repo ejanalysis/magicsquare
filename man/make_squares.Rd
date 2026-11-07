@@ -39,6 +39,8 @@ squares found and unique dictionary words searched (default TRUE).}
 A list with the original count_ok_2rows through count_ok_5rows,
   found2 through found5, and timing fields. Each column of a found matrix
   contains the row words of one square. Unsaved partial hits are NULL.
+  Complete squares are grouped with their transposes when both occur in
+  the results. Symmetric squares appear once, since they equal their transpose.
   Counts beyond the word length are NA. Additional fields elapsed_seconds,
   complete, and candidates_checked describe the search. complete is FALSE
   whenever the result limit stops the search, even if no further hits exist.
@@ -54,7 +56,11 @@ completion. This searches general across/down squares, including asymmetric
 squares, rather than assuming the rows equal the columns.
 
 A complete unlimited search includes a transpose whenever its row words are
-distinct and it satisfies the same rules. Partial counts describe
+distinct and it satisfies the same rules. Each square is followed immediately
+by its transpose if that orientation is present and has not already been
+placed. Missing transposes are not added, including when max_squares stops
+the search early. Partial results retain their search order, since their
+transposes are not complete dictionary-word squares. Partial counts describe
 prefixes with an individually available completion for every column; they
 do not guarantee that all columns can be completed together.
 }

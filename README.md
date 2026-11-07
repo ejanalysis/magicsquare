@@ -3,6 +3,83 @@
 Find word squares from a vocabulary you choose: every row reads as a word
 from left to right, and every column reads as a word from top to bottom.
 
+For example, my favorites so far: 
+```text
+  G R A P E
+  R U L E D
+  A L O N G
+  F E N C E
+  T R E E S
+
+  S C E N T
+  C A N O E
+  A R S O N
+  R O U S E
+  F L E E T
+
+  S U G A R
+  T R A D E
+  R I S E S
+  I N E P T
+  P E S T S
+
+  T A R T S
+  A W A R E
+  S A L O N
+  K I L L S
+  S T Y L E
+  
+  T A S K S
+  A W A I T
+  R A L L Y
+  T R O L L
+  S E N S E
+
+  S O A R S
+  L I M I T
+  A L O N E
+  T E N S E
+  E D G E D
+  
+  and if you allow a word to appear both across and down, you can get symmetric squares like this:
+  
+  D E L T A
+  E M A I L
+  L A R G E
+  T I G E R
+  A L E R T
+
+  B R A V E
+  R U L E D
+  A L O N G
+  V E N U E
+  E D G E S
+  
+  B I B L E
+  I D E A L
+  B E A R D
+  L A R G E
+  E L D E R 
+  
+  Music-related words: 
+  
+  U S H E R
+  S C O R E
+  H O R N S
+  E R N S T
+  R E S T S
+```
+
+Complete `make_squares()` results place each square next to its transpose when both are present:
+square 1, its transpose, square 2, its transpose, and so on. Symmetric squares
+appear once because their transpose is identical. A transpose can be absent
+when it would repeat a row word or when a result limit stops the search early.
+
+`print_squares()` displays each pair once, in two columns: the square on the
+left and its transpose on the right. For a symmetric square, both columns are
+identical. The right-hand view is calculated even if that orientation was not
+returned by the search; displaying it does not add a search result.
+
 ## Try the music vocabulary
 
 From the package checkout, load the current code and data:
@@ -26,14 +103,15 @@ only squares containing ELGAR:
 print_squares(x$found5, query = "ELGAR", compact = FALSE)
 ```
 
-The square's letters are displayed like this:
+The square and its transpose are displayed like this:
 
 ```text
-E L G A R
-L O R D E
-G R I E G
-A D E L E
-R E G E R
+Square 1     Transpose
+E L G A R    E L G A R
+L O R D E    L O R D E
+G R I E G    G R I E G
+A D E L E    A D E L E
+R E G E R    R E G E R
 ```
 
 `allow_shared_words = TRUE` permits a word to appear both across and down,

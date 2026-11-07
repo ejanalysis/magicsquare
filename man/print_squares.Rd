@@ -2,29 +2,45 @@
 % Please edit documentation in R/print_squares.R
 \name{print_squares}
 \alias{print_squares}
-\title{look at results to see if a given word or string query was among the squares found}
+\title{Print each square beside its transpose}
 \usage{
 print_squares(hitstable, query = "*", compact = TRUE)
 }
 \arguments{
-\item{hitstable}{output of [make_squares()] function}
+\item{hitstable}{Output of [make_squares()], or a matrix/data frame with
+one square's row words in each column. Three to five saved rows are supported.}
 
-\item{query}{word or partial word, query for grepl, ignoring case}
+\item{query}{A word or regular expression to match in either orientation,
+ignoring case. The default \code{"*"} displays all pairs.}
 
-\item{compact}{set FALSE to print with spaces between letters - easier to read the tables}
+\item{compact}{Set FALSE to print spaces between letters.}
 }
 \value{
-prints squares that had the query term
+Invisibly returns a data frame of matching input columns, or NULL
+  if none match. Printing groups transpose pairs, without changing the input
+  results or adding columns to the returned data frame.
 }
 \description{
-look at results to see if a given word or string query was among the squares found
+Print each square beside its transpose
+}
+\details{
+Each displayed block has two columns: the square and its transpose. If both
+orientations occur in the input, their pair is displayed once. A symmetric
+square is displayed with identical left and right columns. The right column
+is computed for display even if that orientation is absent from the input,
+for example after a search stops at max_squares. It does not add a found hit.
+
+Rectangular partial results are shown beside their transposes, with blank
+padding as needed. The transposed strings are column prefixes, rather than
+complete dictionary words, and are labeled accordingly.
 }
 \examples{
-# Find music squares, allowing words to appear both across and down:
-x = make_squares(words5music, allow_shared_words = TRUE)
-# Spaces between letters make the squares easier to read:
+# Each square is displayed next to its transpose, once per pair:
+x = make_squares(head(words5, 1455), allow_shared_words = FALSE)
 print_squares(x$found5, compact = FALSE)
-# Show only squares containing ELGAR:
-print_squares(x$found5, query = 'ELGAR', compact = FALSE)
 
+# Music squares, including symmetric ones:
+x = make_squares(words5music, allow_shared_words = TRUE)
+print_squares(x$found5, compact = FALSE)
+print_squares(x$found5, query = 'ELGAR', compact = FALSE)
 }
