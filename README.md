@@ -55,6 +55,108 @@ and explanations of names and less familiar terms.
 
 ## Use your own words
 
+All bundled word-list vectors, including the full `words5` vocabulary and
+`words5music`, are ordered from most to least frequent in English. To search
+only the top X words from a specified bundled list:
+
+```r
+wordlist <- words5  # Or words5music, words4, words5common, etc.
+X <- 500
+selected_words <- head(wordlist, X)
+x <- make_squares(selected_words, allow_shared_words = TRUE)
+print_squares(x$found5, compact = FALSE)  # Use found4 for four-letter words
+```
+
+`head()` selects up to X available entries. Custom vectors you supply yourself
+need to be frequency-ordered first; `make_squares()` does not rank them.
+`word_frequencies` provides the estimates for spellings in the bundled lists.
+Equal frequency scores are ordered alphabetically, and words with no estimate
+go last. Original spellings and entries have been preserved.
+
+For common English words ranked from most to least frequent, use
+`words5common`. Select the first N with `head()`:
+
+```r
+head(words5common, 20)
+N <- 500
+x <- make_squares(head(words5common, N), allow_shared_words = TRUE)
+print_squares(x$found5, compact = FALSE)
+```
+
+`make_squares()` reports the number of complete squares found and the number
+of unique words searched. Add `report = FALSE` to suppress that summary. A
+search stopped at `max_squares` reports that more results may exist.
+
+The common list contains 518 five-letter words with wordfreq Zipf scores of
+at least 4.5 (about 32 occurrences per million words). The most frequent 218
+have scores of at least 5 (100 per million). These are corpus estimates rather
+than a universal ordering of English words; ties are alphabetical. A smaller
+vocabulary may have no valid square.
+
+Inspect the ranks, scores, or a stricter frequency cutoff with:
+
+```r
+head(words5common_frequency)
+very_common <- with(words5common_frequency, word[zipf >= 5])
+```
+
+See `?words5common` and the [source and licensing notes](inst/COMMON-WORDS.md).
+
+## Smallest top-X vocabulary that makes a 5x5 square
+
+For the current frequency-ordered `words5` list of 3,103 words:
+
+| Across/down reuse | Smallest X | Squares found at X | Squares found at X - 1 | Word added at X |
+| --- | ---: | ---: | ---: | --- |
+| `allow_shared_words = TRUE` | 493 | 3 | 0 | SEATS |
+| `allow_shared_words = FALSE` | 1,455 | 2 | 0 | ROOFS |
+
+These minima were found by binary search and verified with complete searches
+at X and X - 1. Adding words cannot eliminate an existing square, so the
+zero-result X - 1 checks establish the minima. The findings depend on the
+current dictionary and frequency ordering, including alphabetical tie breaks.
+
+With reuse allowed, the top 493 words produce these three symmetric squares:
+
+```text
+S E A T S    S E A T S    S E A T S
+E I G H T    E I G H T    E I G H T
+A G R E E    A G R E E    A G R E E
+T H E M E    T H E R E    T H E S E
+S T E E L    S T E E L    S T E E L
+```
+
+With reuse forbidden, the top 1,455 words produce these two squares. They are
+transposes of each other: the rows of one are the columns of the other.
+
+```text
+S T A R T    S T R A P
+T H R E E    T H O S E
+R O O F S    A R O S E
+A S S E T    R E F E R
+P E E R S    T E S T S
+```
+
+Reproduce the results and verify the immediately smaller prefixes:
+
+```r
+shared <- make_squares(head(words5, 493), allow_shared_words = TRUE)
+print_squares(shared$found5, compact = FALSE)
+
+disjoint <- make_squares(head(words5, 1455), allow_shared_words = FALSE)
+print_squares(disjoint$found5, compact = FALSE)
+
+shared_before <- make_squares(head(words5, 492), allow_shared_words = TRUE)
+disjoint_before <- make_squares(head(words5, 1454), allow_shared_words = FALSE)
+stopifnot(shared$complete, disjoint$complete,
+          shared_before$complete, disjoint_before$complete,
+          shared$count_ok_5rows == 3, disjoint$count_ok_5rows == 2,
+          shared_before$count_ok_5rows == 0,
+          disjoint_before$count_ok_5rows == 0)
+```
+
+## Supply a custom vocabulary
+
 Supply a character vector of equal-length words, with two to five letters:
 
 ```r

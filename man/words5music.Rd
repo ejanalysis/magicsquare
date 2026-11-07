@@ -6,8 +6,11 @@
 including terms, instruments, performers, composers, brands, and musical works.
 Connections range from direct technical terms to first names and title components.
 This is a curated candidate list, not a fully source-verified dictionary.}
-\format{A character vector of 607 unique uppercase A-Z words.}
-\details{The editable source is \file{5-letter-words-music.txt} in the installed
+\format{A character vector of 607 unique uppercase A-Z words, ordered by decreasing
+estimated English frequency with alphabetical ties and unestimated words last.
+Its source attribute records the frequency provenance and data licensing.}
+\details{Frequency ordering uses wordfreq 3.1.1; see \code{\link{word_frequencies}}
+and \file{COMMON-WORDS.md} for source credits and licensing. The editable source is \file{5-letter-words-music.txt} in the installed
 package directory. \file{music-word-notes.txt} explains additions, and
 \file{MUSIC-WORDS.md} describes inclusion policy, reference examples and searches.}
 \examples{

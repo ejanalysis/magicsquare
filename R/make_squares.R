@@ -2,7 +2,8 @@
 #'
 #' @param wordlist Character vector of equal-length words, with 2 to 5 letters.
 #'   Words are trimmed, uppercased, and deduplicated; only A-Z are accepted.
-#' @param quiet Whether to suppress progress and timing output.
+#' @param quiet Whether to suppress timing output. The console summary is
+#'   controlled separately by \code{report}.
 #' @param save_2row_hits Whether to retain plausible two-row partial squares.
 #' @param save_3row_hits Whether to retain plausible three-row partial squares.
 #' @param allow_shared_words Allow a word to appear both across and down.
@@ -10,6 +11,8 @@
 #'   always be distinct. Column words may repeat, as in the original function.
 #' @param max_squares Stop after this many complete squares (default Inf).
 #'   A finite limit can omit transposes and makes partial counts incomplete.
+#' @param report Whether to print a console summary of the number of complete
+#'   squares found and unique dictionary words searched (default TRUE).
 #' @returns A list with the original count_ok_2rows through count_ok_5rows,
 #'   found2 through found5, and timing fields. Each column of a found matrix
 #'   contains the row words of one square. Unsaved partial hits are NULL.
@@ -34,6 +37,12 @@
 #' # Show just the squares containing ELGAR:
 #' print_squares(x$found5, query = 'ELGAR', compact = FALSE)
 #'
+#' # Search only the top X most frequent words in a specified bundled list:
+#' wordlist = words5
+#' X = 500
+#' x_common = make_squares(head(wordlist, X), allow_shared_words = TRUE)
+#' print_squares(x_common$found5, compact = FALSE)
+#'
 #' x3 = make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
 #' x4 = make_squares(words4example)
 #' x4$found4
@@ -46,7 +55,8 @@ make_squares = function(wordlist,
                         save_2row_hits = FALSE,
                         save_3row_hits = FALSE,
                         allow_shared_words = FALSE,
-                        max_squares = Inf) {
+                        max_squares = Inf,
+                        report = TRUE) {
   started <- proc.time()[['elapsed']]
   if (!is.character(wordlist) || !length(wordlist) || anyNA(wordlist)) {
     stop('wordlist must be a nonempty character vector without NA')
@@ -57,7 +67,7 @@ make_squares = function(wordlist,
       any(!grepl('^[A-Z]+$', wordlist))) {
     stop('wordlist must contain only A-Z words of the same length (2 to 5)')
   }
-  for (flag in list(quiet, save_2row_hits, save_3row_hits, allow_shared_words)) {
+  for (flag in list(quiet, save_2row_hits, save_3row_hits, allow_shared_words, report)) {
     if (!is.logical(flag) || length(flag) != 1L || is.na(flag)) {
       stop('search flags must be single TRUE or FALSE values')
     }
@@ -81,6 +91,16 @@ make_squares = function(wordlist,
   })
   elapsed <- unname(proc.time()[['elapsed']] - started)
   timing <- paste0('Time elapsed: ', round(elapsed, 3L), ' seconds')
+  if (report) {
+    cat(sprintf('Found %s complete %dx%d %s from %s unique %s.\n',
+                format(counts[n], scientific = FALSE, trim = TRUE), n, n,
+                if (counts[n] == 1) 'square' else 'squares',
+                format(length(wordlist), scientific = FALSE, trim = TRUE),
+                if (length(wordlist) == 1) 'word' else 'words'))
+    if (!search[[3L]]) {
+      cat('Search stopped at max_squares; more squares may exist.\n')
+    }
+  }
   if (!quiet) cat(timing, '\n')
   result <- c(stats::setNames(as.list(counts[2:5]), paste0('count_ok_', 2:5, 'rows')),
               stats::setNames(found[2:5], paste0('found', 2:5)))

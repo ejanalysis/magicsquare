@@ -10,14 +10,16 @@ make_squares(
   save_2row_hits = FALSE,
   save_3row_hits = FALSE,
   allow_shared_words = FALSE,
-  max_squares = Inf
+  max_squares = Inf,
+  report = TRUE
 )
 }
 \arguments{
 \item{wordlist}{Character vector of equal-length words, with 2 to 5 letters.
 Words are trimmed, uppercased, and deduplicated; only A-Z are accepted.}
 
-\item{quiet}{Whether to suppress progress and timing output.}
+\item{quiet}{Whether to suppress timing output. The console summary is
+controlled separately by \code{report}.}
 
 \item{save_2row_hits}{Whether to retain plausible two-row partial squares.}
 
@@ -29,6 +31,9 @@ always be distinct. Column words may repeat, as in the original function.}
 
 \item{max_squares}{Stop after this many complete squares (default Inf).
 A finite limit can omit transposes and makes partial counts incomplete.}
+
+\item{report}{Whether to print a console summary of the number of complete
+squares found and unique dictionary words searched (default TRUE).}
 }
 \value{
 A list with the original count_ok_2rows through count_ok_5rows,
@@ -59,6 +64,12 @@ x = make_squares(words5music, allow_shared_words = TRUE)
 print_squares(x$found5, compact = FALSE)
 # Show just the squares containing ELGAR:
 print_squares(x$found5, query = 'ELGAR', compact = FALSE)
+
+# Search only the top X most frequent words in a specified bundled list:
+wordlist = words5
+X = 500
+x_common = make_squares(head(wordlist, X), allow_shared_words = TRUE)
+print_squares(x_common$found5, compact = FALSE)
 
 x3 = make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'))
 x4 = make_squares(words4example)

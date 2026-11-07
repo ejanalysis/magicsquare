@@ -50,7 +50,7 @@ stopifnot(make_squares(w)$count_ok_4rows == 0,
           make_squares(w, allow_shared_words = TRUE)$count_ok_4rows == 1)
 x <- make_squares(c('AIR', 'ROE', 'END', 'ARE', 'ION', 'RED'), max_squares = 1)
 stopifnot(x$count_ok_3rows == 1, !x$complete,
-          length(capture.output(invisible(make_squares(w)))) == 0)
+          length(capture.output(invisible(make_squares(w, report=FALSE)))) == 0)
 # Normalization, tiny dictionaries, and malformed input.
 stopifnot(identical(keys(make_squares(c(w, ' ball '), allow_shared_words=TRUE)$found4),
                     keys(make_squares(w, allow_shared_words=TRUE)$found4)),

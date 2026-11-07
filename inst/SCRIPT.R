@@ -48,6 +48,10 @@ usethis::use_data(words5example, overwrite = TRUE)
 ## read text files and save as datasets for package
 
 # 3-letter word list from
+# After rebuilding any datasets below, restore their frequency ordering with
+# data-raw/build-word-frequencies.py, then rebuild the common-word subset with
+# data-raw/build-words5common.py (both require wordfreq==3.1.1 in Python).
+# Existing packaged datasets do not require Python to load or search.
 # https://copylists.com/words/list-of-3-letter-words/#CVS
 
 words3 <- read.csv('https://copylists.com/downloads/words/3_letter_words/3_letter_words.csv')

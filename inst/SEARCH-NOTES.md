@@ -19,7 +19,8 @@ satisfy the distinct-row rule. Repeated columns can prevent a transpose from
 satisfying that rule.
 
 The existing result fields and matrix layout remain. Intentional cleanups:
-`quiet = TRUE` suppresses all output, unsaved partial hits are NULL rather than
+`quiet = TRUE` suppresses timing output; the console count summary is controlled
+separately by `report` (TRUE by default). Unsaved partial hits are NULL rather than
 placeholder zeroes, counts beyond N are consistently NA, and invalid input
 raises an informative error. Word case, duplicates, and surrounding whitespace
 are normalized. Result order is deterministic alphabetical traversal rather
