@@ -1,21 +1,38 @@
 # magicsquare
 
-Find word squares from a vocabulary you choose: every row reads as a word
-from left to right, and every column reads as a word from top to bottom.
+This package finds word squares from a vocabulary you choose. 
+A word square is a square arrangement of words such that 
+every row reads as a word from left to right, and 
+every column reads as a word from top to bottom.
 
-For example, my favorites so far: 
+
+For example, the words "Bible ideal: elder, large beard." 
+form a 5x5 symmetric square if arranged like this:
+```text
+  B I B L E
+  I D E A L
+  B E A R D
+  L A R G E
+  E L D E R 
+```
+Same for "These eight steel seats agree."
+```text
+  S E A T S
+  E I G H T
+  A G R E E
+  T H E S E
+  S T E E L
+```
+
+Some favorites where 10 different words are used to form a 5x5 square,
+some of which sound like news headlines or poetry:
+
 ```text
   G R A P E
   R U L E D
   A L O N G
   F E N C E
   T R E E S
-
-  S C E N T
-  C A N O E
-  A R S O N
-  R O U S E
-  F L E E T
 
   S U G A R
   T R A D E
@@ -29,6 +46,12 @@ For example, my favorites so far:
   K I L L S
   S T Y L E
   
+  S C E N T
+  C A N O E
+  A R S O N
+  R O U S E
+  F L E E T
+
   T A S K S
   A W A I T
   R A L L Y
@@ -40,37 +63,27 @@ For example, my favorites so far:
   A L O N E
   T E N S E
   E D G E D
-  
-  and if you allow a word to appear both across and down, you can get symmetric squares like this:
-  
-  D E L T A
-  E M A I L
-  L A R G E
-  T I G E R
-  A L E R T
+```
 
+If you allow a word to appear both across and down, 
+you can find symmetric squares like these:
+  
+```text
   B R A V E
   R U L E D
   A L O N G
   V E N U E
   E D G E S
   
-  B I B L E
-  I D E A L
-  B E A R D
+  D E L T A
+  E M A I L
   L A R G E
-  E L D E R 
-  
-  Music-related words: 
-  
-  U S H E R
-  S C O R E
-  H O R N S
-  E R N S T
-  R E S T S
+  T I G E R
+  A L E R T
 ```
 
-Complete `make_squares()` results place each square next to its transpose when both are present:
+
+`make_squares()` results show each square next to its transpose if both exist:
 square 1, its transpose, square 2, its transpose, and so on. Symmetric squares
 appear once because their transpose is identical. A transpose can be absent
 when it would repeat a row word or when a result limit stops the search early.
@@ -80,39 +93,61 @@ left and its transpose on the right. For a symmetric square, both columns are
 identical. The right-hand view is calculated even if that orientation was not
 returned by the search; displaying it does not add a search result.
 
-## Try the music vocabulary
+## Words limited to a specific topic such as music
 
-From the package checkout, load the current code and data:
-
+If you have installed the package, you can just use `library(magicsquare)`. 
+Otherwise, from the package checkout, use `pkgload::load_all()`
+to load the current code and data.
 ```r
 pkgload::load_all()
 ```
 
-For an installed copy, use `library(magicsquare)` instead. Then find the music
-squares and print them with a space between each letter:
+Find squares using music-related terms. 
+Then print them with a space between each letter:
 
 ```r
 x <- make_squares(words5music, allow_shared_words = TRUE)
-print_squares(x$found5, compact = FALSE)
+print_squares(x$found5)
 ```
 
-`compact = FALSE` makes the squares easier to read. For example, to display
+`compact = FALSE` is default and makes the squares easier to read. 
+For example, to display
 only squares containing ELGAR:
 
 ```r
-print_squares(x$found5, query = "ELGAR", compact = FALSE)
+print_squares(x$found5, query = "ELGAR")
 ```
-
-The square and its transpose are displayed like this:
-
+Music-related word squares: 
+  
 ```text
-Square 1     Transpose
-E L G A R    E L G A R
-L O R D E    L O R D E
-G R I E G    G R I E G
-A D E L E    A D E L E
-R E G E R    R E G E R
+  C O R P S
+  O P E R A
+  R E M I X
+  P R I C E * 
+  S A X E S
+
+  U S H E R
+  S C O R E
+  H O R N S
+  E R N S T **
+  R E S T S
 ```
+\* PRICE could refer to either of these:
+
+- Leontyne Price (born 1927): One of the most celebrated American 
+operatic sopranos, particularly famous for her performances of Verdi.
+
+- Lloyd Price (1933–2021): Influential R&B and early rock-and-roll singer,
+known for “Stagger Lee,” “Personality,” and “Lawdy Miss Clawdy.” 
+Inducted into the Rock & Roll Hall of Fame in 1998.
+
+\*\* ERNST could refer to:
+
+- Heinrich Wilhelm Ernst (1814–1865): A celebrated violinist and composer, 
+considered one of the greatest virtuosos of the 19th century and 
+a rival to Niccolò Paganini. Known for extremely difficult violin works, 
+including his arrangement of Schubert's Erlkönig and his Six Polyphonic Studies.
+
 
 `allow_shared_words = TRUE` permits a word to appear both across and down,
 as in this symmetric square. The default is `FALSE`, which forbids that reuse.
@@ -124,7 +159,7 @@ To exclude that entry and print the remaining 65 squares:
 
 ```r
 x <- make_squares(setdiff(words5music, "ALFIN"), allow_shared_words = TRUE)
-print_squares(x$found5, compact = FALSE)
+print_squares(x$found5, compact = TRUE)
 ```
 
 See [vocabulary notes](inst/MUSIC-WORDS.md) and
@@ -204,8 +239,8 @@ T H E M E    T H E R E    T H E S E
 S T E E L    S T E E L    S T E E L
 ```
 
-With reuse forbidden, the top 1,455 words produce these two squares. They are
-transposes of each other: the rows of one are the columns of the other.
+With reuse forbidden, the top 1,455 words produce only these two squares. 
+They are transposes of each other: the rows of one are the columns of the other.
 
 ```text
 S T A R T    S T R A P
